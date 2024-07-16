@@ -1,0 +1,36 @@
+{
+  "name": "tech-crud",
+  "version": "1.0.0",
+  "description": "Repo dedicado para o desenvolvimento do Tech Challenge FIAP fase 2",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon --exec babel-node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vbotelhoo/techchallenge-fase-2.git"
+  },
+  "keywords": [
+    "crud"
+  ],
+  "author": "Vitor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vbotelhoo/techchallenge-fase-2/issues"
+  },
+  "homepage": "https://github.com/vbotelhoo/techchallenge-fase-2#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.4.5",
+    "esm": "^3.2.25",
+    "express": "^4.19.2",
+    "mongoose": "^8.5.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.7",
+    "@babel/node": "^7.24.7",
+    "@babel/preset-env": "^7.24.7",
+    "nodemon": "^3.1.4"
+  }
+}
