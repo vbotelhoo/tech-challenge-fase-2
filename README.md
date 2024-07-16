@@ -32,6 +32,12 @@ A pasta `src` é organizada da seguinte forma:
 
         - **Resposta**: Um array de objetos livro.
 
+        ### GET `/:bookid`
+
+        Retorno o registro do ID informado na URL
+
+        - **Resposta**: Um objeto livro.
+
         ### POST `/`
 
         Cria um novo livro com os dados fornecidos no corpo da requisição.
