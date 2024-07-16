@@ -7,6 +7,12 @@ export const listBook = async () => {
     return books;
 }
 
+export const listBookById = async(id) => {
+    await databaseConnection();
+    const book = await Book.findById(id);
+    return book;
+}
+
 export const createBook = async (book) => {
     await databaseConnection();
     const createBook = await Book.create(book);
@@ -18,7 +24,7 @@ export const deleteBook = async (id) => {
     await Book.findByIdAndDelete(id);
 }
 
-export const uptadeBook = async (id, newBody) => {
+export const updateBook = async (id, newBody) => {
     await databaseConnection();
     await Book.findByIdAndUpdate(id, newBody);
 }
